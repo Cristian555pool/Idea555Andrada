@@ -1,0 +1,256 @@
+*{
+    margin:0%;
+    padding: 0%;
+    background-image: linear-gradient(to right, rgb(148, 29, 29), rgb(7, 6, 6));
+}
+
+.titulos{
+    text-decoration: dashed;
+    color: white;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 0.4fr 1fr 0.4fr;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer"
+    "section section";
+}
+
+.header {
+    background-color:#5f0909;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: header;
+}
+
+.naveg__li a{
+    color: white;
+    text-decoration: none;
+}
+
+.navegacion li{
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.naveg__ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav__submenu-ul{
+    display: none;
+    position: absolute;
+}
+.nav__submenu-ul li{
+    display: block;
+    background-color: rgb(204, 186, 186);
+    width: 200px;
+}
+
+.naveg__ul li:hover .nav__submenu-ul{
+    display: block;
+
+}
+.main{
+    background-image: linear-gradient(to left, rgb(148, 29, 29), rgb(7, 6, 6));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    grid-area: main;
+}
+.main p{
+    padding-left: 15px;
+    color: white;
+    text-align:justify;
+    font-family: fantasy;
+}
+
+.main p:hover{
+    color: rgb(194, 179, 179);
+    font-size: 17px;
+    transition: ease-out 0.3s;
+}
+
+.section {
+    background-color:#5f0909;
+    display: flex;
+    justify-content: space-around;
+    align-items:baseline;
+    grid-area: section;
+}
+
+.section{
+    text-align: justify;
+    color: white;
+    padding-left: 12px;
+    font-family: fantasy;
+}
+
+.main_parrafo a{
+    color: white;
+}
+
+.titulos ul{
+    color: white;
+}
+
+.footer{
+    background-image: linear-gradient(to right, rgb(148, 29, 29), rgb(7, 6, 6));
+    grid-area: footer;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 5px;
+    color: white;
+    font-family: fantasy;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #ffffff;
+    text-align: justify;
+}
+
+.cajaGaleria{
+    background-image: linear-gradient(to left, rgb(148, 29, 29), rgb(7, 6, 6));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    grid-area: main;
+}
+.cajaGaleria__img{
+    padding-left: 15px;
+    color: white;
+    text-align:justify;
+}
+
+
+@media screen and (max-width:1280px){
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+
+    .header{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .navegacion{
+        margin-top: 20px;
+    }
+
+    .main{
+        flex-wrap: wrap;
+    }
+    
+    .cajaGaleria{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+}
+
+
+@media screen and (max-width:768px){
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+
+    .header{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .navegacion{
+        margin-top: 20px;
+    }
+
+    .main{
+        flex-wrap: wrap;
+    }
+    
+    .cajaGaleria{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:375px){
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+
+    .header{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .navegacion{
+        margin-top: 20px;
+    }
+
+    .main{
+        flex-wrap: wrap;
+    }
+
+    .cajaGaleria{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+}
