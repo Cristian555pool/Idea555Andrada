@@ -9,6 +9,36 @@
     color: white;
 }
 
+.LogoMoov {
+    padding: 5px 7cm;
+    background-color: white;
+}
+
+@keyframes Moov {
+    0% {
+        background: rgb(95, 76, 76);
+        left: 0;
+    }
+    50% {
+        background: rgb(49, 1, 1);
+    }
+    100% {
+        background: linear-gradient(to left, rgb(148, 29, 29), rgb(7, 6, 6));
+        left: 80%;
+    }
+}
+
+.Caja {
+    background: rgb(23, 7, 7);
+    height: 50px;
+    width: 200px;
+    margin: 20px;
+    animation-name: Moov;
+    animation-duration: 5s;
+    position: relative;
+}
+
+
 .contenedor{
     display: grid;
     grid-template-columns: 1fr 1fr ;
@@ -74,7 +104,7 @@
 }
 
 .main p:hover{
-    color: rgb(194, 179, 179);
+    color: grey;
     font-size: 17px;
     transition: ease-out 0.3s;
 }
@@ -126,6 +156,8 @@
     align-items: center;
     padding: 50px;
     grid-area: main;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 .cajaGaleria__img{
     padding-left: 15px;
@@ -159,6 +191,7 @@
     
     .cajaGaleria{
         flex-wrap: wrap;
+        flex-direction: row;
         justify-content: center;
     }
 
