@@ -97,7 +97,7 @@
     grid-area: main;
 }
 .main p{
-    padding-left: 15px;
+    padding-left: 14px;
     color: white;
     text-align:justify;
     font-family: fantasy;
@@ -105,8 +105,8 @@
 
 .main p:hover{
     color: grey;
-    font-size: 17px;
-    transition: ease-out 0.3s;
+    font-size: 18px;
+    transition: ease-out 0.4s;
 }
 
 .section {
