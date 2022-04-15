@@ -5,42 +5,11 @@
 }
 
 .titulos{
-    display: flex;
     text-decoration: dashed;
     color: white;
 }
 
-.LogoMoov {
-    padding: 5px 7cm;
-    background-color: white;
-}
-
-@keyframes Moov {
-    0% {
-        background: rgb(95, 76, 76);
-        left: 0;
-    }
-    50% {
-        background: rgb(49, 1, 1);
-    }
-    100% {
-        background: linear-gradient(to left, rgb(148, 29, 29), rgb(7, 6, 6));
-        left: 80%;
-    }
-}
-
-.Caja {
-    background: rgb(23, 7, 7);
-    height: 50px;
-    width: 200px;
-    margin: 20px;
-    animation-name: Moov;
-    animation-duration: 5s;
-    position: relative;
-}
-
-
-/*.contenedor{
+.contenedor{
     display: grid;
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 0.4fr 1fr 0.4fr;
@@ -49,7 +18,7 @@
     "main main"
     "footer footer"
     "section section";
-}*/
+}
 
 .header {
     background-color:#5f0909;
@@ -57,7 +26,6 @@
     justify-content: space-around;
     align-items: center;
     grid-area: header;
-    width: 100%;
 }
 
 .naveg__li a{
@@ -76,20 +44,15 @@
     color: #ffffff;
 }
 
-.nav__submenu-ul{
-    display: none;
-    position: absolute;
-}
-.nav__submenu-ul li{
-    display: block;
-    background-color: rgb(204, 186, 186);
-    width: 200px;
+section .contact{
+    color: white;
 }
 
-.naveg__ul li:hover .nav__submenu-ul{
-    display: block;
 
+main .boton {
+    color: white;
 }
+
 .main{
     background-image: linear-gradient(to left, rgb(148, 29, 29), rgb(7, 6, 6));
     display: flex;
@@ -127,10 +90,6 @@
 }
 
 .main_parrafo a{
-    color: white;
-}
-
-.boton{
     color: white;
 }
 
