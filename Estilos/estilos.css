@@ -9,6 +9,18 @@
     color: white;
 }
 
+.headerImg{
+    animation-name: bajar;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes bajar{
+    0% {transform: translate(0px, 0px);}
+    25% {transform: translate(0px, 10px);}
+    50% {transform: translate(0px, -10px);}
+}
+
 .contenedor{
     display: grid;
     grid-template-columns: 1fr 1fr ;
@@ -48,13 +60,16 @@ section .contact{
     color: white;
 }
 
+div .titv{
+    color: white;
+}
 
 main .boton {
     color: white;
 }
 
 .main{
-    background-image: linear-gradient(to left, rgb(148, 29, 29), rgb(7, 6, 6));
+    background-image: linear-gradient(to right, rgb(148, 29, 29), rgb(7, 6, 6));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,6 +112,11 @@ main .boton {
     color: white;
 }
 
+div img .spider{
+    display: flex;
+    align-items: center;
+}
+
 .footer{
     background-image: linear-gradient(to right, rgb(148, 29, 29), rgb(7, 6, 6));
     grid-area: footer;
@@ -124,12 +144,12 @@ main .boton {
     flex-wrap: wrap;
     flex-direction: row;
 }
+
 .cajaGaleria__img{
     padding-left: 15px;
     color: white;
     text-align:justify;
 }
-
 
 @media screen and (max-width:1280px){
     .contenedor{
@@ -171,7 +191,6 @@ main .boton {
     }
 
 }
-
 
 @media screen and (max-width:768px){
     .contenedor{
