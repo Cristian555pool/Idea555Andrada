@@ -9,6 +9,10 @@
     color: white;
 }
 
+.titulos ul{
+    color: white;
+}
+
 .headerImg{
     animation-name: bajar;
     animation-duration: 3s;
@@ -78,13 +82,13 @@ main .boton {
 }
 .main p{
     padding-left: 14px;
-    color: white;
+    color: rgb(182, 178, 232);
     text-align:justify;
     font-family: fantasy;
 }
 
 .main p:hover{
-    color: grey;
+    color: rgb(241, 226, 226);
     font-size: 18px;
     transition: ease-out 0.4s;
 }
@@ -105,10 +109,6 @@ main .boton {
 }
 
 .main_parrafo a{
-    color: white;
-}
-
-.titulos ul{
     color: white;
 }
 
@@ -264,5 +264,4 @@ main .boton {
         flex-wrap: wrap;
         flex-direction: column;
     }
-
 }
