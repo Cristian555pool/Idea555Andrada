@@ -1,7 +1,10 @@
+@import "variables";
+@import "mediaq";
+@import "footer";
 *{
     margin:0%;
     padding: 0%;
-    background-image: linear-gradient(to right, rgb(148, 29, 29), rgb(7, 6, 6));
+    background-image: $colorPrincipal;
 }
 
 .titulos{
@@ -13,7 +16,7 @@
 }
 
 .header {
-    background-color:#5f0909;
+    background-color: $colorSec;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -44,6 +47,11 @@
     "section section";
 }
 
+.navegacion{
+    width: 500px;
+    height: ($alto/2)-100 ;
+}
+
 .naveg__li a{
     color: white;
     text-decoration: none;
@@ -61,7 +69,7 @@
 }
 
 .section {
-    background-color:#5f0909;
+    background-color: $colorSec;
     display: flex;
     justify-content: space-around;
     align-items:baseline;
@@ -80,7 +88,7 @@ section .contact{
 
 div .titv{
     color: white;
-    background-color: #5f0909;
+    background-color: $colorSec;
 }
 
 
@@ -89,7 +97,7 @@ main .boton {
 }
 
 .main{
-    background-image: linear-gradient(to right, rgb(148, 29, 29), rgb(7, 6, 6));
+    background-image: $colorPrincipal;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,13 +105,13 @@ main .boton {
     grid-area: main;
 
     p{
-        padding-left: 14px;
-        color: rgb(182, 178, 232);
+        padding-left: 14px; 
+        color: $color1Parrafo;
         text-align:justify;
-        font-family: fantasy;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
         &:hover{
-            color: rgb(241, 226, 226);
+            color: $color2Parrafo;
             font-size: 18px;
             transition: ease-out 0.4s;
         }
@@ -113,23 +121,6 @@ main .boton {
 
 .main_parrafo a{
     color: white;
-}
-
-.footer{
-    background-image: linear-gradient(to right, rgb(148, 29, 29), rgb(7, 6, 6));
-    grid-area: footer;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-left: 5px;
-    color: white;
-    font-family: fantasy;
-
-    a{
-        text-decoration: none;
-        color: #ffffff;
-        text-align: justify;
-    }
 }
 
 
@@ -148,124 +139,4 @@ main .boton {
     padding-left: 15px;
     color: white;
     text-align:justify;
-}
-
-@media screen and (max-width:1280px){
-    .contenedor{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer";
-    }
-
-    .header{
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .navegacion{
-        margin-top: 20px;
-    }
-
-    .main{
-        flex-wrap: wrap;
-    }
-    
-    .cajaGaleria{
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .section{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .footer{
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-}
-
-@media screen and (max-width:768px){
-    .contenedor{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer";
-    }
-
-    .header{
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .navegacion{
-        margin-top: 20px;
-    }
-
-    .main{
-        flex-wrap: wrap;
-    }
-    
-    .cajaGaleria{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .section{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .footer{
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-}
-
-@media screen and (max-width:375px){
-    .contenedor{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer";
-    }
-
-    .header{
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .navegacion{
-        margin-top: 20px;
-    }
-
-    .main{
-        flex-wrap: wrap;
-    }
-
-    .cajaGaleria{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .section{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .footer{
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
 }
