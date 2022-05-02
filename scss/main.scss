@@ -1,10 +1,14 @@
 @import "variables";
 @import "mediaq";
 @import "footer";
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
 *{
     margin:0%;
     padding: 0%;
     background-image: $colorPrincipal;
+    font-family: 'Fredoka'
 }
 
 .titulos{
@@ -48,18 +52,20 @@
 }
 
 .navegacion{
-    width: 500px;
-    height: ($alto/2)-100 ;
+    width: 100%;
+   
 }
 
 .naveg__li a{
     color: white;
     text-decoration: none;
+    font-size: 20px;
 }
 
-.naveg__ul li a{
-    text-decoration: none;
-    color: #ffffff;
+.naveg__ul{
+    display: flex; 
+    justify-content: center;
+    margin-top: 12px;
 }
 
 .navegacion li{
@@ -77,7 +83,6 @@
     text-align: justify;
     color: white;
     padding-left: 12px;
-    font-family: fantasy;
 }
 
 
@@ -108,7 +113,6 @@ main .boton {
         padding-left: 14px; 
         color: $color1Parrafo;
         text-align:justify;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
         &:hover{
             color: $color2Parrafo;
@@ -139,4 +143,8 @@ main .boton {
     padding-left: 15px;
     color: white;
     text-align:justify;
+}
+
+.btn--twitter {
+    color: lightblue;
 }

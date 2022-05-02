@@ -1,14 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 .btn--twitter {
-  background-color: #55acee; }
+  color: #55acee; }
 
 .btn--facebook {
-  background-color: #3a5798; }
+  color: #3a5798; }
 
 .btn--whatsapp {
-  background-color: #63e24a; }
+  color: #63e24a; }
 
 .btn--instagram {
-  background-color: #911c91; }
+  color: #911c91; }
 
 @media screen and (max-width: 1280px) {
   .contenedor {
@@ -94,7 +95,8 @@
 * {
   margin: 0%;
   padding: 0%;
-  background-image: linear-gradient(to right, #941d1d, #070606); }
+  background-image: linear-gradient(to right, #941d1d, #070606);
+  font-family: 'Fredoka'; }
 
 .titulos {
   text-decoration: dashed;
@@ -129,16 +131,17 @@
   grid-template-areas: "header header" "main main" "footer footer" "section section"; }
 
 .navegacion {
-  width: 500px;
-  height: 100px; }
+  width: 100%; }
 
 .naveg__li a {
   color: white;
-  text-decoration: none; }
-
-.naveg__ul li a {
   text-decoration: none;
-  color: #ffffff; }
+  font-size: 20px; }
+
+.naveg__ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px; }
 
 .navegacion li {
   list-style-type: none;
@@ -153,8 +156,7 @@
   grid-area: section;
   text-align: justify;
   color: white;
-  padding-left: 12px;
-  font-family: fantasy; }
+  padding-left: 12px; }
 
 section .contact {
   color: white; }
@@ -176,8 +178,7 @@ main .boton {
   .main p {
     padding-left: 14px;
     color: #76c4cb;
-    text-align: justify;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; }
+    text-align: justify; }
     .main p:hover {
       color: #f1eaea;
       font-size: 18px;
@@ -200,3 +201,6 @@ main .boton {
   padding-left: 15px;
   color: white;
   text-align: justify; }
+
+.btn--twitter {
+  color: lightblue; }

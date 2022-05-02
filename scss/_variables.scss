@@ -13,6 +13,6 @@ $redes: (
 
 @each $red, $color in $redes {
     .btn--#{$red} {
-        background-color: $color;
+        color: $color;
     }
 }
