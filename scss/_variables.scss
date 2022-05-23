@@ -2,7 +2,7 @@ $colorPrincipal: linear-gradient(to right, rgb(148, 29, 29), rgb(7, 6, 6));
 $colorSec: rgba(91, 10, 10, 0.781);
 $color1Parrafo: rgb(118, 196, 203);
 $color2Parrafo: #f1eaea;
-$alto: 400px;
+
 
 @each $red, $color in $redes {
     .btn--#{$red} {

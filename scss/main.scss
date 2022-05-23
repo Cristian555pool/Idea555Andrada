@@ -87,10 +87,31 @@ img{
      margin-top: 5px;
  }
  
+.textoparraf{
+    color:rgb(37, 33, 33);
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.8;
+    padding: 50px 50px;
+}
+.text-center{
+    text-align: justify;
+}
 
+.textoparraf2{
+    color:rgb(219, 209, 209);
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.8;
+}
 
 .textoPrincipalConFondo{
     color:white;
+    text-align: justify;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     line-height: 1.8;
@@ -112,9 +133,13 @@ img{
 
 
 .fondo{
-    background-image:url("../assets/img/fondo.png");
     background-size: cover;
     background-attachment: fixed;
+}
+
+.parrafoFoot{
+    text-align: justify;
+    color: white;
 }
 
 footer{
